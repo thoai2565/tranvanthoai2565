@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .root{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .wrap-item{
+            width: 20%;
+            text-align: center;
+        }
+        .wrap-item img {
+            width: 100%;
+        }
+        .wrap-item h3 {
+            width: 70%;
+            padding-top: 10px;
+            margin: 0 auto;
+            line-height: 16px;
+            height: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .cart {
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: flex-end;
+        }
+        .cart i {
+            font-size: 34px;
+            margin-right: 42px;
+            cursor: pointer;
+        }
+        .wrap-cart-show:hover .cart-show {
+            display: block;
+        }
+
+        .cart-show {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 500px;
+            padding: 6px;
+            padding-top: 0;
+            display: none;
+        }
+        .wrap-cart {
+            display: flex;
+            padding-bottom: 10px;
+            background-color: aqua;
+            box-sizing: border-box;
+            padding-top:10px;
+            padding-left: 10px;
+        }
+        .wrap-cart:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .cart-show img {
+            width: 12%;
+            height: 12%;
+        }
+        .cart-show h4 {
+            width: 70%;
+            padding-left: 10px;
+            line-height: 16px;
+            height: 16px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .cart-show p {
+            width: 10%;
+            margin-top: 20px;
+        }
+        .cart-show i {
+            width: 8%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <div class="wrap-cart-show">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            <div class="cart-show"></div>
+        </div>
+    </div>
+    <div class="root"></div>
+    <script type="module" src="base.js"></script>
+</body>
+</html>
